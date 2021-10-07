@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--  bootswatch min.css cerulean theme -->
+
+    <link rel="stylesheet" href="bootstrap.min (9).css" />
+
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Ecommerce website</title>
+  </head>
+  <body>
+    <div class="main">
+     
+       <!-- Navbar starts here-->
+       <nav class="navbar navbar-expand-lg navbar-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html"
+                  >Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact us</a>
+              </li>
+              
+            </ul>
+            <div class="d-flex">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown dropdown-hover" >
+                  <a class="nav-link waves-effect cart" id="navbarDropdownMenuLink3" data-toggle="dropdown" href="./cart.html">
+                    <span class="badge badge-pill"></span>
+                    <i class="fas fa-shopping-cart pl-0"></i>
+                  </a>
+                  <div id="dropdown-cart" class="dropdown-menu dropdown-menu-right p-3">
+    
+                  </div>
+                </li>
+
+                <li class="nav-item pl-2 mb-2 mb-md-0">
+                  <a href="./admin.html" type="button"
+                    class="btn btn-md btn-rounded btn-navbar btn-outline-primary">Admin login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar ends here -->
+      <!-- contact us container starts here -->
+
+      <div class="container contactUs mt-4 mb-5">
+        <div class="row justify-content-center mt-4 mb-5">
+          <h1 class='text-center mt-4 mb-5'>Contact us</h1>
+          <div class="col-6 mt-4 mb-5">
+            <form class="row g-3 ">
+              <div class="col-md-6 ">
+                <label for="fName" class="form-label">First Name</label>
+                <input type="text" class="form-control contactForm" id="fName">
+              </div>
+              <div class="col-md-6 ">
+                <label for="lName" class="form-label">Last Name</label>
+                <input type="text" class="form-control contactForm" id="lName">
+              </div>
+              <div class="col-12 ">
+                <div class="form-floating">
+                  <textarea class="form-control contactForm" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Comments</label>
+                </div>
+              </div>
+              
+              <div class="col-12">
+                <button type="submit" class="btn btn-outline-primary contactFormBtn">Contact us</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-6 pictureContact">
+            <img src="https://images.unsplash.com/photo-1616440060371-ea5e982c2440?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80" alt="">
+          </div>
+      </div>
+
+      <!-- contact us container ends here -->
+    </div>
+
+
+<!-- footer -->
+
+<footer class="footer mt-auto py-3 bg-light contactUsFooter">
+  <div class="container text-center">
+    <span class="text-muted"><i class="far fa-copyright"></i> Daniela Tripon 2021</span>
+  </div>
+</footer>
+
+<!-- footer -->
+
+    <script src="./src/contact.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
