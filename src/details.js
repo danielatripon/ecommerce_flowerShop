@@ -148,6 +148,7 @@ window.onload = () => {
       localStorage.setItem("cart", JSON.stringify(cart));
 
       alert("Product added to your cart!");
+      window.location.reload();
     });
   }
 };
